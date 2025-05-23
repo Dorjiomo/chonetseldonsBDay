@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Choney's Birthday</title>
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="javascript:history.back()" 
+   style="position: absolute; left: 40px; top: 40px; font-size: 62px; text-decoration: none; color: black;">
+  &#8592;
+</a>
+
+<div style="text-align: center; padding-top: 20px;">
+  <h1 style="font-family: 'Great Vibes', cursive;">Choney's 21st Birthday</h1>
+</div>
+
+ 
+
+  <div class="container">
+    <!-- Image Card -->
+    
+    <div class="index-image">
+      <img src="img/CHosPboard.png" alt="Index Image" onclick="openModal(this)">
+      <p> SZA: Saturn</p>
+      <a href="img/CHosPboard.png" download class="download-link">Download</a>
+    </div>
+
+
+    <div class="index-image">
+      <img src="img/MoonofSaturn.png" alt="Index Image" onclick="openModal(this)">
+      <p> Phoebe </p>
+      <a href="img/MoonofSaturn.png" download class="download-link">Download</a>
+    </div>
+
+    <div class="index-image">
+      <img src="img/C's_Galaxy.png" alt="Index Image" onclick="openModal(this)">
+      <p> Monty Python's The Meaning of Life: Galaxy Song - Galaxy we call the "C"</p>
+      <a href="img/C's_Galaxy.png" download class="download-link">Download</a>
+    </div>
+
+     <div class="index-image">
+      <img src="img/OOTD.png" alt="Index Image" onclick="openModal(this)">
+      <p> Taylor Swift : Fearless</p>
+      <a href="img/OOTD.png" download class="download-link">Download</a>
+    </div>
+
+    <div class="index-image">
+      <img src="img/ChoneysChronicle.png" alt="Index Image" onclick="openModal(this)">
+      <p> Jhope: Neuron</p>
+      <a href="img/ChoneysChronicle.png" download class="download-link">Download</a>
+    </div>
+    
+    <div class="index-image">
+      <img src="img/fcard.png" alt="Index Image" onclick="openModal(this)">
+      <p> The 1975 - About You</p>
+      <a href="img/fcard.png" download class="download-link">Download</a>
+    </div>
+
+     <div class="index-image">
+      <img src="img/love_letter.png" alt="Index Image" onclick="openModal(this)">
+      <p> Taylor Swift : Lover</p>
+      <a href="img/CHOLily.png" download class="download-link">Download</a>
+    </div>
+
+    <div class="index-image">
+      <img src="img/CHOLily.png" alt="Index Image" onclick="openModal(this)">
+      <p> Connie Francis: Pretty Little Baby</p>
+      <a href="img/CHOLily.png" download class="download-link">Download</a>
+    </div>
+   
+     <div class="index-image">
+      <img src="img/LetterForYou.png" alt="Index Image" onclick="openModal(this)">
+      <p>Taylor Swift: Long Live</p>
+      <a href="img/LetterForYou.png" download class="download-link">Download</a>
+    </div>
+  </div>
+
+  <p>Here are few cards i've made. I chose each song carefully and used them for visualising, to make collage of your pictures, and write the letter. I sending you love and good intentions. Love you🫶🏻
+    Once again Happy 21st Birthday🎂.
+  </p>
+
+
+  <!-- Modal for Full View -->
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <script>
+    function openModal(imgElement) {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("modalImage");
+      modal.style.display = "block";
+      modalImg.src = imgElement.src;
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    // Close modal on click outside image
+    window.onclick = function(event) {
+      const modal = document.getElementById("myModal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+
+
+
+</body>
+
